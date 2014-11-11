@@ -1,0 +1,29 @@
+.scheme_bar {
+	color: white;
+	width: 515px;
+	height: 33px;
+	background: url("/www/images/bar_short.png") no-repeat center center;
+	font-family: Lucida Sans Unicode, Verdana, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 17px;
+}
+
+.scheme_bar span {
+	text-align: left;
+	padding: 0 0 0 15px;
+}
+
+.scheme_bar * {
+	color: white;
+	font-family: Lucida Sans Unicode, Verdana, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.scheme_bar_long {
+	width: 758px;
+	height: 33px;
+	background-image: url("/www/images/bar_long.png");
+}

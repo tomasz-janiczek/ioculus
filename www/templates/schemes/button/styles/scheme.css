@@ -1,0 +1,30 @@
+.scheme_button {
+	width: 80px;
+	height: 80px;
+	text-align: center;
+	border: 1px solid #e5e5e5;
+	background: #f9fafc;
+	padding: 3px 5px 2px 5px;
+}
+
+.scheme_button_image,
+.scheme_button_title {
+	width: 100%;
+	clear: both;
+}
+
+.scheme_button_image {
+	height: 50px;
+}
+
+.scheme_button_title {
+	height: 30px;
+}
+
+.scheme_button a {
+	color: gray;
+}
+
+.scheme_button a:hover {
+	color: black;
+}

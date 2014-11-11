@@ -1,0 +1,9 @@
+#user_icon {
+	float: left;
+	margin: 0 15px;
+}
+
+#info p {
+	padding-top: 10px;
+	font-weight: bold;
+}

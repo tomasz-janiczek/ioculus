@@ -1,0 +1,16 @@
+#action input.text,
+#action input.password,
+#action select {
+	width:			200px;
+}
+
+#action select {
+	display:			block;
+	height:			20px;
+}
+
+#action input#buttonSubmit {
+	display:			block;
+	margin:			10px auto 0 auto;
+	clear:			both;
+}

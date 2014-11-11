@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Rejestr firm / deweloperów</description>
+
+	<dependencies>
+		<module>user</module>
+	</dependencies>
+
+	<database/>
+
+	<action name="add">
+		<template/>
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="128"/>
+		</param>
+		<param name="type" required="false">
+			<validator name="inRange" min="0" max="5"/>
+		</param>
+		<param name="city" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="address" required="false">
+			<validator name="inLengthRange" min="3" max="128"/>
+		</param>
+		<param name="nip" required="false">
+			<validator name="inLengthRange" min="6" max="32"/>
+		</param>
+		<param name="email" required="false">
+			<validator name="inLengthRange" min="3" max="64"/>
+			<validator name="isMailAddress"/>
+		</param>
+		<param name="phone" required="false">
+			<validator name="inLengthRange" min="3" max="64"/>
+			<validator name="isPhoneNumber"/>
+		</param>
+		<param name="fax" required="false">
+			<validator name="inLengthRange" min="3" max="64"/>
+			<validator name="isPhoneNumber"/>
+		</param>
+	</action>
+
+	<action name="edit" extend="public:add">
+		<template/>
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="delete">
+		<template/>
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="exists">
+		<template/>
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+	
+</module>

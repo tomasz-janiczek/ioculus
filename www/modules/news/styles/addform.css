@@ -1,0 +1,18 @@
+#action input.text {
+	width:			605px;
+}
+
+#action label#contentLabel {
+	width:			auto;
+	text-align:			left;
+}
+
+#action img#buttonSubmit {
+	margin-top:		20px;
+	cursor:			pointer;
+}
+
+#action textarea.textarea {
+	width:			605px;
+	height:			330px
+}

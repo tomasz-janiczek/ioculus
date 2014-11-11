@@ -1,0 +1,7 @@
+#vcard_button .scheme_form_field_labeled_content {
+	text-align: center;
+}
+
+#vcard_button .scheme_form_field_labeled_content img {
+	cursor: pointer;
+}

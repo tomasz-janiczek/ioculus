@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<type>system</type>
+	<author>Tomasz Janiczek</author>
+	<version>0.3</version>
+	<description>Web-based iOculus module manager</description>
+
+	<action name="listform" defaultAction="true" cache="false"/>
+	<action name="addform" cache="false"/>
+
+	<action name="create">
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="author" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="description" required="false">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="actions" required="false">
+			<modifier name="explode" separator=","/>
+		</param>
+	</action>
+
+	<action name="detailsform" cache="false">
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+	
+	<action name="actiondetailsform" cache="false">
+		<param name="modname">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="actname">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="validate">
+		<param name="module">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="action">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="args">
+			<modifier name="decodeURIcomponentArray"/>
+		</param>
+	</action>
+
+	<action name="clearcache">
+		<param name="module">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="action">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="userid" required="false">
+			<validator name="isId"/>
+		</param>
+		<param name="all" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="regenerate">
+		<param name="module">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+	</action>
+
+	<action name="clearobservers"/>
+
+	<action name="cache">
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="cacheall"/>
+
+	<action name="uncache">
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="uncacheall"/>
+
+</module>

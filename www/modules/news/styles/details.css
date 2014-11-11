@@ -1,0 +1,27 @@
+td#content #title,
+td#content p#author,
+td#content p#content {
+	text-align:			left;
+}
+
+td#content #title {
+	margin:			15px auto 0px 20px;
+}
+
+td#content p#author {
+	font-size:			9px;
+	margin:			2px auto 0px 20px;
+}
+
+td#content p#content {
+	text-indent:		20px;
+}
+
+td#content img#buttonSubmit:hover {
+	cursor:			pointer;
+}
+
+td#content p#content:first-letter {
+	font-weight:		bold;
+	font-size:			16px;
+}

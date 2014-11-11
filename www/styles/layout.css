@@ -1,0 +1,68 @@
+@import "xhtml.css";
+
+#site_layout {
+	width: 760px;
+	height: auto;
+	margin: 0 auto;
+}
+
+#site_layout_header {
+	background: url("/www/images/top_new.jpg") no-repeat center;
+/*	height: 173px; */
+	height: 260px;
+}
+
+#site_layout_footer {
+	background: url("/www/images/index_09.jpg") repeat-x;
+	height: 35px;
+	color: white;
+	font-weight: bold;
+	padding-top: 8px;
+}
+
+#site_layout_footer * {
+	color: white;
+	font-weight: bold;
+}
+
+#site_layout_footer #site_layout_footer_left,
+#site_layout_footer #site_layout_footer_right {
+	width: 50%;
+	height: 100%;
+	float: left;
+	clear: none;
+}
+
+#site_layout_footer #site_layout_footer_left {
+	text-align: left;
+}
+
+#site_layout_footer #site_layout_footer_left span {
+	padding-left: 10px;
+}
+
+#site_layout_footer #site_layout_footer_right {
+	text-align: right;
+}
+
+#site_layout_footer #site_layout_footer_right span {
+	padding-right: 10px;
+}
+
+#site_layout_footer #site_layout_footer_right,
+#site_layout_footer #site_layout_footer_right * {
+	font-size: 10px;
+	font-weight: normal;
+	color: white;
+}
+
+#site_layout_certs {
+	text-align: center;
+}
+
+#site_layout_body {
+	overflow: hidden;
+	width: 100%;
+/*	padding: 10px 0 10px 0; */
+	padding: 0 0 10px 0;
+}

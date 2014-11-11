@@ -1,0 +1,13 @@
+#action p#title {
+	margin:			0 auto 10px auto;
+	font-size:			20px;
+	text-align:			left;
+}
+
+#action td#scheme_admin_content {
+	text-align:			center;
+}
+
+#action img#buttonSubmit {
+	margin-top:		15px;
+}

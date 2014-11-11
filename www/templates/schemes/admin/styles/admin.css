@@ -1,0 +1,30 @@
+table.scheme_admin td#scheme_admin_content {
+	vertical-align:		top;
+	text-align:			left;
+}
+
+.scheme_admin label {
+	display:			block;
+	font-weight:		bold;
+	clear:			both;
+	margin-bottom:		3px;
+}
+
+.scheme_admin input.text,
+.scheme_admin input.password,
+.scheme_admin select {
+	border:			1px solid #858585;
+	margin:			0px auto 5px auto;
+	background:		white;
+	color:			black;
+}
+
+.scheme_admin textarea {
+	border:			1px solid gray;
+	margin:			0px auto 5px auto;
+	background:		white;
+}
+
+.scheme_admin input.checkbox {
+	margin:			0px auto 0px auto;
+}

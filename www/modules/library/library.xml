@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Baza wiedzy</description>
+
+	<action name="show" pagination="true">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="main" cache="false">
+		<param name="id" required="false">
+			<validator name="isId"/>
+		</param>
+		<param name="page" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="idea" cache="false"/>	
+
+	<action name="offer">
+		<param name="for">
+			<modifier name="tolower"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="id" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+		
+	<action name="offerdev">
+		<style>offer.css</style>
+	</action>
+
+	<action name="studium">
+		<param name="id" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="sep"/>
+
+	<action name="sep_register_form">
+		<style>sep.css</style>
+	</action>
+
+	<action name="sepregister">
+		<template/>
+		<param name="agree" required="false"/>
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32">
+				<error>Imię musi posiadać długość od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="lastname">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwisko musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="email">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Adres e-mail musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>			
+		</param>
+		<param name="position" required="false">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Stanowisko musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="company" required="false">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwa firmy musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="nip" required="false">
+			<validator name="inLengthRange" min="1" max="32">
+				<error>NIP musi posiadać długość od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="phone" required="false">
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Numer telefonu musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isPhoneNumber">
+				<error>Proszę podać poprawny numer telefonu, składający się z cyfr, znaków '( ) + -' oraz spacji</error>
+			</validator>
+		</param>
+		<param name="dvd" required="false"/>
+	</action>
+
+	<action name="sendmail">
+		<template/>
+		<param name="template">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="address">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Adres e-mail musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>			
+		</param>
+		<param name="subject">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="fullname">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="vars" required="false"/>
+	</action>
+
+	<action name="sepactivate">
+		<template/>
+		<param name="hash">	
+			<validator name="inLengthRange" min="1" max="35"/>
+		</param>
+	</action>
+
+	<action name="activate">
+		<template/>
+		<param name="hash">	
+			<validator name="inLengthRange" min="1" max="35"/>
+		</param>
+		<param name="type">	
+			<validator name="inLengthRange" min="1" max="16"/>
+		</param>
+	</action>
+
+	<action name="sep_ok_form">
+		<style>sep.css</style>
+	</action>
+
+	<action name="studium_register_form">
+	</action>
+
+	<action name="studiumregister">
+		<template/>
+		<param name="agree" required="false"/>
+		<param name="studium_specialization">
+			<validator name="inLengthRange" min="1" max="128">
+				<error>Konieczne jest wybranie specjalizacji studium</error>
+			</validator>
+		</param>
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32">
+				<error>Imię musi posiadać długość od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="lastname">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwisko musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="father_name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32">
+				<error>Imię ojca musi posiadać długość od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="birth_date">
+			<validator name="inLengthRange" min="1" max="16">
+				<error>Data urodzenia musi podsiadać długość od 1 do 16 znaków</error>
+			</validator>
+		</param>
+		<param name="birth_location">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Miejsce urodzenia musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="address">
+			<validator name="inLengthRange" min="1" max="128">
+				<error>Adres zamieszkania musi posiadać długość od 1 do 128 znaków</error>
+			</validator>
+		</param>
+		<param name="city">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwa miasta musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="phone">
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Numer telefonu musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isPhoneNumber">
+				<error>Proszę podać poprawny numer telefonu, składający się z cyfr, znaków '( ) + -' oraz spacji</error>
+			</validator>
+		</param>
+		<param name="email">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Adres e-mail musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>			
+		</param>
+		<param name="position">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Stanowisko musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+
+		<param name="graduation_date">
+			<validator name="inLengthRange" min="1" max="16">
+				<error>Data ukończenia studiów musi posiadać długość od 1 do 16 znaków</error>
+			</validator>
+		</param>
+		<param name="university_name">
+			<validator name="inLengthRange" min="1" max="128">
+				<error>Nazwa uczelni musi posiadać długość od 1 do 128 znaków</error>
+			</validator>
+		</param>
+		<param name="faculty">
+			<validator name="inLengthRange" min="1" max="128">
+				<error>Nazwa wydziału musi posiadać długość od 1 do 128 znaków</error>
+			</validator>
+		</param>
+		<param name="specialization">
+			<validator name="inLengthRange" min="1" max="128">
+				<error>Nazwa specjalizacji musi posiadać długość od 1 do 128 znaków</error>
+			</validator>
+		</param>
+		<param name="graduation_number">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Numer dyplomu musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+
+		<param name="company_name" required="false">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwa firmy musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="company_address" required="false">
+			<validator name="inLengthRange" min="1" max="128">
+				<error>Adres firmy musi posiadać długość od 1 do 128 znaków</error>
+			</validator>
+		</param>
+		<param name="company_city" required="false">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwa miasta firmy musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="company_phone" required="false">
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Numer telefonu firmy musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isPhoneNumber">
+				<error>Proszę podać poprawny numer telefonu, składający się z cyfr, znaków '( ) + -' oraz spacji</error>
+			</validator>
+		</param>
+		<param name="company_fax" required="false">
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Numer faxu firmy musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isPhoneNumber">
+				<error>Proszę podać poprawny numer faxu, składający się z cyfr, znaków '( ) + -' oraz spacji</error>
+			</validator>
+		</param>
+		<param name="company_nip" required="false">
+			<validator name="inLengthRange" min="1" max="32">
+				<error>NIP firmy musi posiadać długość od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="carreer_path" required="false">
+			<validator name="inLengthRange" min="1" max="255">
+				<error>Lista stanowisk nie może przekraczać długości 255 znaków</error>
+			</validator>
+		</param>
+		<param name="will_use_food" required="false"/>
+		<param name="will_use_hotel" required="false"/>
+		<param name="notes" required="false">
+			<validator name="inLengthRange" min="1" max="255">
+				<error>Notatki nie mogą przekraczać długości 255 znaków</error>
+			</validator>
+		</param>
+	</action>
+
+	<action name="studiumxls"/>
+
+	<action name="conversatory"/>
+
+	<action name="conversatory1" pagination="true">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="conversatory2" pagination="true">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="page">
+			<modifier name="default" value="1"/>
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="ks">
+	</action>
+
+	<action name="ks_register_form">
+		<style>ks.css</style>
+	</action>
+
+	<action name="ksregister">
+		<template/>
+		<param name="name">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32">
+				<error>Imię musi posiadać długość od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="lastname">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwisko musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="email">
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Adres e-mail musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>			
+		</param>
+		<param name="company">
+			<validator name="inLengthRange" min="1" max="64">
+				<error>Nazwa firmy musi posiadać długość od 1 do 64 znaków</error>
+			</validator>
+		</param>
+		<param name="phone">
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Numer telefonu musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isPhoneNumber">
+				<error>Proszę podać poprawny numer telefonu, składający się z cyfr, znaków '( ) + -' oraz spacji</error>
+			</validator>
+		</param>
+		<param name="fax" required="false">
+			<validator name="inLengthRange" min="5" max="64">
+				<error>Numer telefonu musi posiadać długość od 5 do 64 znaków</error>
+			</validator>
+			<validator name="isPhoneNumber">
+				<error>Proszę podać poprawny numer telefonu, składający się z cyfr, znaków '( ) + -' oraz spacji</error>
+			</validator>
+		</param>
+		<param name="notes" required="false">
+			<validator name="inLengthRange" min="1" max="255">
+				<error>Notatki nie mogą przekraczać długości 255 znaków</error>
+			</validator>
+		</param>
+	</action>
+
+	<action name="students">
+		<style>studium.css</style>
+	</action>
+
+	<action name="conversatory3">
+		<style>ks.css</style>
+	</action>
+
+	<action name="conversatory4">
+		<style>ks.css</style>
+	</action>
+
+	<action name="privacy" cache="false"/>
+
+</module>

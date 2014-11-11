@@ -1,0 +1,74 @@
+table.scheme_table {
+	width:			100%;
+	height:			auto;
+	margin:			0 auto 0 auto;
+}
+
+table.scheme_table td.scheme_table_td {
+	background:		#f9fafc;
+	padding:			18px;
+	border:			1px solid #ececec;
+}
+
+table.scheme_table table.scheme_table_inner {
+	width:			100%;
+	height:			auto;
+	border:			1px solid #e5e5e5;
+	background:		#f9fafc;
+}
+
+table.scheme_table table.scheme_table_inner tr.scheme_table_inner_tr {
+}
+
+table.scheme_table table.scheme_table_inner tr.scheme_table_inner_tr:hover {
+	background:		#f1f1f1;
+}
+
+table.scheme_table table.scheme_table_inner tr.scheme_table_inner_tr_white {
+	background:		white;
+}
+
+table.scheme_table table.scheme_table_inner td {
+	width:			auto;
+	text-align:			left;
+	vertical-align:		middle;
+	border:			1px solid #e5e5e5;
+	border-left:		0;
+	border-right:		0;
+	height:			23px;
+	padding:			0px 10px 0px 10px;
+}
+
+table.scheme_table table.scheme_table_inner td,
+table.scheme_table table.scheme_table_inner td * {
+	color:			#193364;
+}
+
+.scheme_table_inner_td_white {
+	background:		white;
+}
+
+table.scheme_table table.scheme_table_inner tr.scheme_table_topbar td,
+table.scheme_table table.scheme_table_inner tr.scheme_table_bottombar td {
+	border:			1px solid #d0b648;
+	background:		url("/www/images/admin/bar_yellow_bg.jpg") repeat-x #f7dc47;
+	width:			100%;
+	color:			black;
+	font-weight:		bold;
+	text-align:			left;
+	vertical-align:		middle;
+}
+
+table.scheme_table table.scheme_table_inner tr.scheme_table_bottombar td {
+	color:			#59532f;
+	font-weight:		normal;
+	text-align:			right;
+}
+
+table.scheme_table table.scheme_table_inner tr.scheme_table_bottombar select {
+	border:			1px solid #59532f;
+}
+
+table.scheme_table a:hover {
+	text-decoration:	underline;
+}

@@ -1,0 +1,29 @@
+#action td#library_contact_plan ul {
+	margin-left:		10px;
+	padding-left:		0px;
+	padding-top:		10px;
+	width:				97%;
+}
+	
+#action td#library_contact_plan ul li {
+	padding-left:		0px;
+	margin-left:		20px;
+}
+
+.library_contact_button_get_vcard {
+	margin-left:	180px;
+	margin-right:	50px;
+}
+
+.library_contact_button_send_vcard {
+	margin-left:	180px;
+	margin-right:	50px;
+}
+
+#myTextarea {
+	width:			284px;
+}
+
+.library_contact_button_send {
+	margin-right:	50px;
+}

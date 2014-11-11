@@ -1,0 +1,76 @@
+// Traditional Chinese UTF-8; Twapweb Site translated; twapweb_AT_gmail_DOT_com
+// çšéŤä¸­ć UTF-8 ďźć¸ä˝ćç¨ĺčŁ˝ä˝ďź twapweb_AT_gmail_DOT_com
+
+tinyMCE.addToLang('table',{
+general_tab : 'ä¸čŹ',
+advanced_tab : 'é˛é',
+general_props : 'ä¸čŹĺąŹć§',
+advanced_props : 'é˛éĺąŹć§',
+desc : 'ćĺĽć°čĄ¨ć ź',
+row_before_desc : 'ĺ¨äšĺćĺĽĺ',
+row_after_desc : 'ĺ¨äšĺžćĺĽĺ',
+delete_row_desc : 'ĺŞé¤ĺ',
+col_before_desc : 'ĺ¨äšĺćĺĽčĄ',
+col_after_desc : 'ĺ¨äšĺžćĺĽčĄ',
+delete_col_desc : 'ĺŞé¤čĄ',
+rowtype : 'čĄ¨ć źä¸­çĺ',
+title : 'ćĺĽćčŞżć´čĄ¨ć ź',
+width : 'ĺŻŹ',
+height : 'éŤ',
+cols : 'čĄ',
+rows : 'ĺ',
+cellspacing : 'ĺ˛ĺ­ć źć źçˇéčˇ',
+cellpadding : 'ĺ˛ĺ­ć źĺ§ćčć źçˇéčˇ',
+border : 'ćĄçˇ',
+align : 'ä˝ç˝Ž',
+align_default : 'ĺ§ĺŽ',
+align_left : 'é ĺˇŚ',
+align_right : 'é ĺł',
+align_middle : 'ç˝Žä¸­',
+row_title : 'ĺĺąŹć§',
+cell_title : 'ĺ˛ĺ­ć źĺąŹć§',
+cell_type : 'ĺ˛ĺ­ć źéĄĺ',
+row_desc : 'ĺĺąŹć§',
+cell_desc : 'ĺ˛ĺ­ć źĺąŹć§',
+valign : 'ĺç´ä˝ç˝Ž',
+align_top : 'é çŤŻ',
+align_bottom : 'ĺşé¨',
+props_desc : 'čĄ¨ć źĺąŹć§',
+bordercolor : 'ćĄçˇéĄč˛',
+bgcolor : 'čćŻéĄč˛',
+merge_cells_title : 'ĺä˝ľĺ˛ĺ­ć ź',
+split_cells_desc : 'ĺĺ˛ĺ˛ĺ­ć ź',
+merge_cells_desc : 'ĺä˝ľĺ˛ĺ­ć ź',
+cut_row_desc : 'ĺŞä¸ĺ',
+copy_row_desc : 'č¤čŁ˝ĺ',
+paste_row_before_desc : 'ĺ¨äšĺč˛źä¸ĺ',
+paste_row_after_desc : 'ĺ¨äšĺžč˛źä¸ĺ',
+id : 'çˇ¨ç˘ź',
+style: 'ĺźć¨Ł',
+langdir : 'čŞč¨ç¨ćł',
+langcode : 'čŞç˘ź',
+mime : 'ĺ°čąĄ MIME éĄĺ',
+ltr : 'çąĺˇŚčłĺł',
+rtl : 'çąĺłčłĺˇŚ',
+bgimage : 'čćŻĺćŞ',
+summary : 'ä¸čŚ˝',
+td : "čłć",
+th : "ć¨é ­",
+cell_cell : 'ć´ć°ćĺ¨çĺ˛ĺ­ć ź',
+cell_row : 'ć´ć°ĺĺ§çĺ˛ĺ­ć ź',
+cell_all : 'ć´ć°čĄ¨ć źä¸­çĺ˛ĺ­ć ź',
+row_row : 'ć´ć°ćĺ¨çĺ',
+row_odd : 'ć´ć°čĄ¨ć źä¸­çĺĽć¸ĺ',
+row_even : 'ć´ć°čĄ¨ć źä¸­çĺść¸ĺ',
+row_all : 'ć´ć°čĄ¨ć źä¸­çĺ',
+thead : 'čĄ¨ć źć¨é ­',
+tbody : 'čĄ¨ć źĺŻŚéŤ',
+tfoot : 'čĄ¨ć źĺşé¨',
+del : 'ĺŞé¤čĄ¨ć ź',
+scope : 'çŻĺ',
+row : 'ĺ',
+col : 'čĄ',
+rowgroup : 'çž¤ĺ',
+colgroup : 'çž¤čĄ',
+missing_scope: 'ç˘şĺŽčŚĺ¨ć˛ćĺ°ć­¤čĄ¨ć źć¨é ­č¨­ĺŽçŻĺä¸çšźçşĺˇčĄĺďź\nä¸ĺ äťĽč¨­ĺŽçčŠąďźĺŻč˝ćĺ°č´ćäşä˝żç¨čçĄćłé ĺŠčŽĺčĄ¨ć źä¸­çé¨äť˝ććŻć´éŤčłč¨ă'
+});

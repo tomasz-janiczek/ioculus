@@ -1,0 +1,22 @@
+table.scheme_adminmenubar {
+	width:			100%;
+	height:			auto;
+	margin:			0;
+	padding:			0;
+}
+
+table.scheme_adminmenubar td.scheme_adminmenubar_title {
+	text-align:			left;
+}
+
+table.scheme_adminmenubar tr td.scheme_adminmenubar_menu {
+	text-align:			right;
+}
+
+table.scheme_adminmenubar td.scheme_adminmenubar_title table.scheme_title {
+	margin:			10px auto 10px 25px;
+}
+
+table.scheme_adminmenubar td.scheme_adminmenubar_menu table.scheme_menu {
+	margin:			10px 0 10px auto;
+}

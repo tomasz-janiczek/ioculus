@@ -1,0 +1,39 @@
+#column1 {
+	float: left;
+	width: 515px;
+	margin-right: 16px;
+}
+
+#column2 {
+	float: right;
+	width: 229px;
+}
+
+.scheme_boxlight3,
+.scheme_boxblue,
+.scheme_boxgreen,
+.scheme_bar {
+	margin: 0 0 10px 0;
+}
+
+.scheme_boxblue li {
+	line-height: 20px;
+}
+
+#site_layout img {
+	border: 1px solid #eeeeee;
+	background: #fff;
+	padding: 5px;
+}
+
+#partners img {
+	display: block;
+	margin: 5px auto;
+	padding: 0;
+	border: 0;
+	background: transparent;
+}
+
+.scheme_layout4 {
+	border-bottom: 1px solid #eeeeee;
+}

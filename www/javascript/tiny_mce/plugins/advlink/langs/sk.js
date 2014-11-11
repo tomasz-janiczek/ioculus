@@ -1,0 +1,72 @@
+/**
+ * Slovak lang variables 
+ * encoding: utf-8
+ * 
+ * @author MariĂĄn Zvalo marian.zvalo@student.umb.sk
+ *    
+ * $Id: sk.js,v 1.1 2006/02/28 20:56:44 spocke Exp $ 
+ */  
+
+tinyMCE.addToLang('',{
+insert_link_target_same : 'OtvorĂ­ĹĽ v rovnakom okne/rĂĄme',
+insert_link_target_parent : 'OtvorĂ­ĹĽ v rodiÄovskĂŠm okne/rĂĄme',
+insert_link_target_top : 'OtvoriĹĽ v najvyĹĄĹĄom rĂĄme (prepĂ­ĹĄe vĹĄetky rĂĄmy)',
+insert_link_target_blank : 'OtvorĂ­ĹĽ v novom okne',
+insert_link_target_named : 'OtvorĂ­ĹĽ v okne',
+insert_link_popup : 'JS-Popup',
+insert_link_popup_url : 'Popup URL',
+insert_link_popup_name : 'NĂĄzov okna',
+insert_link_popup_return : 'VloĹžiĹĽ \'return false\'',
+insert_link_popup_scrollbars : 'UkĂĄzaĹĽ posĂşvnĂ­ky',
+insert_link_popup_statusbar : 'UkĂĄzaĹĽ stavovĂ˝ riadok',
+insert_link_popup_toolbar : 'UkĂĄzaĹĽ ovlĂĄdaciu liĹĄtu',
+insert_link_popup_menubar : 'UkĂĄzaĹĽ menu',
+insert_link_popup_location : 'UkĂĄzaĹĽ liĹĄtu umiestenĂ­',
+insert_link_popup_resizable : 'PremenlivĂĄ veÄžkosĹĽ okna',
+insert_link_popup_size : 'VelikosĹĽ',
+insert_link_popup_position : 'Umiestnenie (X/Y)',
+insert_link_popup_missingtarget : 'VloĹžte nĂĄzov cieÄža alebo vyberte inĂş voÄžbu.',
+advlink_general_tab : 'HlavnĂŠ',
+advlink_popup_tab : 'NovĂŠ okno',
+advlink_events_tab : 'Udalosti',
+advlink_advanced_tab : 'RozĹĄĂ­renĂŠ',
+advlink_general_props : 'HlavnĂŠ nastavenia',
+advlink_popup_props : 'Nastavenia novĂŠho okna',
+advlink_event_props : 'Udalosti prehliadaÄa',
+advlink_advanced_props : 'RozĹĄĂ­renĂŠ nastavenia',
+advlink_popup_opts : 'VoÄžby',
+advlink_anchor_names : 'Ukotvenia',
+advlink_target_same : 'OtvoriĹĽ v aktuĂĄlnom okne / rĂĄme',
+advlink_target_parent : 'OtvoriĹĽ v materskom okne / rĂĄme',
+advlink_target_top : 'OtvoriĹĽ v najvyĹĄĹĄom rĂĄme (prepĂ­ĹĄe vĹĄetky rĂĄmy)',
+advlink_target_blank : 'OtvoriĹĽ v novom okne',
+advlink_popup : 'NovĂŠ okno prehliadaÄa',
+advlink_popup_url : 'Adresa novĂŠho okna',
+advlink_popup_name : 'NĂĄzov okna',
+advlink_popup_return : 'VloĹžiĹĽ \'return false\'',
+advlink_popup_scrollbars : 'ZobraziĹĽ posuvnĂ­ky',
+advlink_popup_statusbar : 'ZobraziĹĽ stavovĂ˝ riadok',
+advlink_popup_toolbar : 'ZobraziĹĽ nĂĄstroje',
+advlink_popup_menubar : 'ZobraziĹĽ menu',
+advlink_popup_location : 'ZobraziĹĽ navigaÄnĂ˝ panel',
+advlink_popup_resizable : 'UmoĹžniĹĽ zmenu veÄžkosti',
+advlink_popup_dependent : 'ZĂĄvislosĹĽ (iba Mozilla/Firefox)',
+advlink_popup_size : 'VeÄžkosĹĽ',
+advlink_popup_position : 'PozĂ­cia (X/Y)',
+advlink_id : 'Id',
+advlink_style: 'CSS ĹĄtĂ˝l',
+advlink_classes : 'Trieda',
+advlink_target_name : 'NĂĄzov elementu',
+advlink_langdir : 'Smerovanie textu',
+advlink_target_langcode : 'Jazyk cieÄža',
+advlink_langcode : 'KĂłd jazyka cieÄža',
+advlink_encoding : 'ZnakovĂŠ kĂłdovanie cieÄža',
+advlink_mime : 'MIME typ cieÄža',
+advlink_rel : 'VzĹĽah strĂĄnky k cieÄžu',
+advlink_rev : 'VzĹĽah cieÄža k strĂĄnke',
+advlink_tabindex : 'Poradie pre tabulĂĄtor',
+advlink_accesskey : 'KlĂĄvesovĂĄ skratka',
+advlink_ltr : 'Z Äžava do prava',
+advlink_rtl : 'Z prava do Äžava'
+});
+

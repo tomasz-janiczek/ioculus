@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Profile użytkowników</description>
+
+	<dependencies>
+		<module>profile</module>
+		<module>user</module>
+	</dependencies>
+
+	<action name="editform" defaultAction="true" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="edit">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="passwd" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="passwd_confirm" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="email" required="false">
+			<validator name="isMailAddress"/>
+		</param>
+		<param name="name" required="false">
+			<validator name="isName"/>
+		</param>
+		<param name="lastname" required="false">
+			<validator name="isName"/>
+		</param>
+		<param name="position" required="false"/>
+		<param name="company" required="false"/>
+		<param name="nip" required="false">
+			<validator name="isNIP"/>
+		</param>
+		<param name="address" required="false"/>
+		<param name="location" required="false">
+			<validator name="isName"/>
+		</param>
+		<param name="phone" required="false">
+			<validator name="isPhoneNumber"/>
+		</param>
+		<param name="group_ids" required="false">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="group_ids_all" required="false">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="get">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="register">
+		<template/>
+		<param name="agree"/>
+		<param name="handle">
+			<validator name="isHandle">
+				<error>Login musi składać się z co najmniej 3 znaków alfanumerycznych (w tym znaku '.') i nie może rozpoczynać się cyfrą</error>
+			</validator>
+		</param>
+		<param name="passwd">
+			<validator name="isPassword">
+				<error>Hasło musi składać się z co najmniej 6 znaków alfanumerycznych i nie może rozpoczynać się cyfrą</error>
+			</validator>
+		</param>
+		<param name="passwd_confirm">
+			<validator name="isPassword">
+				<error>Hasło musi składać się z co najmniej 6 znaków alfanumerycznych i nie może rozpoczynać się cyfrą</error>
+			</validator>			
+		</param>
+		<param name="email">
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>
+		</param>
+		<param name="email_confirm" required="false">
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>
+		</param>
+	</action>
+
+	<action name="activate">
+		<template/>
+		<param name="hash">	
+			<validator name="inLengthRange" min="1" max="35"/>
+		</param>
+	</action>
+
+	<action name="resetpassword">
+		<param name="id">
+			<validator name="inLengthRange" min="3" max="64">
+				<error>Login musi składać się z co najmniej 3 znaków alfanumerycznych (w tym znaku '.') i nie może rozpoczynać się cyfrą</error>
+			</validator>
+		</param>
+	</action>
+
+</module>

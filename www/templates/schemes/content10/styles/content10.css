@@ -1,0 +1,24 @@
+table.scheme_content10 * {
+	color:				white;
+}
+
+table.scheme_content10 a:hover {
+	text-decoration:	underline;
+}
+
+table.scheme_content10 td {
+	vertical-align:		top;
+}
+
+table.scheme_content10 img.asd {
+	display:			inline;
+	border:				1px solid #adae15;
+	padding:			5px;
+	background:			white;
+	margin:				4px 0 0 0;
+}
+
+table.scheme_content10 div {
+	text-align:			center;
+	margin-top:			10px;
+}

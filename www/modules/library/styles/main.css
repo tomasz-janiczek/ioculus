@@ -1,0 +1,202 @@
+#action {
+	vertical-align:		top;
+}
+
+#action table#library_main {
+	width:			100%;
+	height:			auto;
+}
+
+#action table#library_main td {
+	vertical-align:		top;
+}
+
+#action table#library_main td#library_main_col1 {
+	width:			229px;
+}
+
+#action table#library_main td#library_main_col2 {
+	width:			15px;
+	background:		url("/www/images/index_col2_dot.jpg") repeat-y center;
+}
+
+#action table#library_main td#library_main_col3 {
+}
+
+#action #library_main_nav {
+	margin-top:		0;
+}
+
+#action #library_main_prev_table,
+#action #library_main_prev_table_pageshow {
+	margin:			5px 20px 15px 20px;
+	width:			100%;
+	height:			100%;
+}
+
+#action #library_main_prev_table_pageshow td {
+	text-align:		center;
+	vertical-align: middle;
+}
+
+#action #library_main_prev table td#library_main_prev_date {
+	font-weight:		bold;
+	height:			30px;
+	vertical-align:		middle;
+	text-align:			left;
+}
+
+#action #library_main_prev table td#library_main_prev_content {
+	height:				auto;
+	padding:			20px 0px 10px 0px;
+	line-height:		15px;
+}
+
+#action #library_main_prev table td#library_main_prev_content img#library_main_prev_image {
+	float:				left;
+	padding:			5px;
+	margin:			5px 10px 0px 0px;
+	border:			1px solid #eeeeee;
+}
+
+#action #library_main_prev table td#library_main_prev_options {
+	text-align:			right;
+	vertical-align:		middle;
+}
+
+#action #library_main_prev table td#library_main_prev_options label {
+	display:			block;
+	font-weight:		bold;
+	margin:			0px auto 3px auto;
+}
+
+#action #library_main_prev table td#library_main_prev_options select {
+	width:			85px;
+	margin:			0;
+}
+
+#action #library_main_prev #library_main_prev_author_desc {
+	text-align:			right;
+	padding-right:		20px;
+	padding-top:		5px;
+}
+
+#action #library_main_prev #library_main_prev_author_img {
+	width:			1px;
+}
+
+#action #library_main_prev #library_main_prev_author_img img {
+	margin:			0 auto 0 auto;
+	padding:			4px;
+	border:			1px solid #eeeeee;
+}
+
+#action #library_main_prev table td#library_main_prev_content #library_main_prev_content_portrait p {
+	font-weight:		bold;
+	margin:			10px auto 0 auto;
+	padding:			0;
+}
+
+#action #library_main_prev table td#library_main_prev_link {
+	text-align:			right;
+	padding-right:		40px;
+	height:			20px;
+}
+
+#action #library_main_prev table tr.library_main_prev_get p {
+	font-weight:		bold;
+	font-size:			12px;
+	margin:				5px auto 0px auto;
+	padding-top:		5px;
+}
+
+#action #library_main_prev table tr.library_main_prev_get div {
+	width:				80px;
+	text-align:			center;
+	margin:				3px 0 0 auto;
+}
+
+#action #library_main_prev table tr.library_main_prev_get td.right div {
+	margin:				3px 0 0 auto;
+}
+
+#action #library_main_prev table tr.library_main_prev_get td.left div {
+	margin:				10px auto 0 25px;
+}
+
+#action #library_main_prev table tr.library_main_prev_get div p {
+	font-weight:		bold;
+	font-size:			11px;
+	margin:				0 auto 5px auto;
+	text-align:			center;
+	padding-top:		0;
+}
+
+#action #library_main_prev table tr.library_main_prev_get td.right {
+	text-align:			right;
+	width:				50%;
+}
+
+#action #library_main_prev table tr.library_main_prev_get td.left {
+	text-align:			left;
+	width:				50%;
+}
+
+#action #library_main_prev table td#library_main_prev_paginate {
+	text-align:			center;
+	font-weight:		bold;
+}
+
+#action #library_main_prev table td#library_main_prev_paginate a {
+	font-weight:		normal;
+}
+
+#action #library_main_prev table td#library_main_prev_paginate a:hover {
+	text-decoration:	underline;
+}
+
+#action #library_main_bar {
+	margin:			15px auto 0px auto;
+}
+
+#action table#library_main #library_main_bar td {
+	vertical-align:	middle;
+}
+
+#action #library_main_sol,
+#action #library_main_newsletter {
+	margin-top:		15px;
+}
+
+#action #library_main_bonus td.scheme_boxsilver_td2 {
+	text-align:			left;
+	height:			auto;
+}
+
+#action #library_main_bonus td.scheme_boxsilver_td2 table {
+	margin:			0 0 0 5px;
+}
+
+#action #library_main_bonus td.scheme_boxsilver_td2 table td {
+	vertical-align:		middle;
+	height:			30px;
+	font-size:			14px;
+	font-weight:		bold;
+	padding:			0 15px 0 5px;
+	color:			#1c5177;
+}
+
+#action #library_main_bonus td.scheme_boxsilver_td2 table td a {
+	font-size:			12px;
+	font-weight:		bold;
+	color:			#1c5177;
+}
+
+#action span.library_main_solution_title {
+	font-size:			13px;
+	font-weight:		bold;
+}
+
+#action #library_main_news {
+	margin-top:		15px;
+}

@@ -1,0 +1,34 @@
+[ iOculus sample application ]
+
+* Introduction
+
+This pre-alpha version was tested under the following operating systems:
+- Linux (Debian Sarge),
+- Windows (XP Professional)
+and browsers such as:
+- Firefox (2.0)
+
+It will not work under Internet Explorer. To be exact - it will, but the CSS are W3C compatible,
+so IE will not always know what to do with them. This is only temporary and will be soon fixed
+(unfortunately, we need to support IE...)
+
+* How to install?
+
+1. Create a MySQL database (you can choose freely its name).
+2. Unzip/untar the iOculus archive to a folder of your choosing and point a domain to it.
+   IMPORTANT! In this version iOculus will not work in a subfolder. It must have its own domain.
+   It can be localhost, or a another "local" domain, but not, for example, localhost/ioculus.
+2. Open the following URL in your browser:
+   
+    http://yourdomain.tld/?m=install
+   
+   Do NOT open http://yourdomain.tld/ - you'll get an error, as the database isn't yet set up.
+4. A simple, 3 step installer will show up. Follow the onscreen instructions.
+5. After you've completed the installation, go to http://youdomain.tld.
+   Clicking the OK button on the last step will do exactly the same.
+6. Ready.
+
+Please remeber!
+This is a early pre-alpha version. Practically, its a snapshot, that isn't
+yet ready to be published. But we urgently need help developing it, so...
+Here it goes.

@@ -1,0 +1,13 @@
+table.scheme_menu {
+	width:			auto;
+	height:			auto;
+	margin:			5px;
+}
+
+table.scheme_menu td.scheme_menu_button {
+	padding:			0 2px 0 2px
+}
+
+table.scheme_menu td table.scheme_button {
+	margin:			0;
+}

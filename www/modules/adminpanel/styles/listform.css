@@ -1,0 +1,17 @@
+#container {
+	text-align: left;
+}
+
+#container .column {
+	float: left;
+	width: auto;
+	margin: 0 10px 0 0;
+}
+
+#container .first_column {
+	margin-left: 10px;
+}
+
+#container .scheme_button {
+	margin: 5px 0;
+}

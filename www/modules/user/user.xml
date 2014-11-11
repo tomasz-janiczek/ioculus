@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>Tomasz Janiczek</author>
+	<version>0.3</version>
+	<description>User management</description>
+
+	<!-- TODO
+		<action name="foobar" uses="database,useradmin,cache,vfs">
+		</action>
+	-->
+
+	<action name="listform" defaultAction="true" cache="false"/>
+	
+	<action name="rules"/>
+	<action name="addform" cache="false"/>
+	<action name="registerform" cache="false"/>
+	<action name="registerconfirm"/>
+	<action name="loginform"/>
+	<action name="logout"/>
+
+	<action name="exists">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<action name="editform" cache="false">
+		<template>addform.tpl</template>
+		<style>addform.css</style>		
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="add">
+		<param name="handle">
+			<validator name="inLengthRange" min="1" max="32">
+				<error>Login musi posiadać od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="passwd">
+			<validator name="inLengthRange" min="1" max="32">
+			    <error>Hasło musi posiadać od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="email">
+			<validator name="inLengthRange" min="1" max="64">
+			    <error>Długość adresu e-mail nie może przekraczać 64 znaków</error>
+			</validator>
+			<validator name="isMailAddress">
+			    <error>Adres e-mail ma niepoprawny format</error>
+			</validator>
+		</param>
+		<param name="active" required="false">
+			<validator name="inRange" min="0" max="1"/>
+		</param>
+		<param name="type" required="false">
+			<validator name="inRange" min="0" max="5"/>
+		</param>
+	</action>
+
+	<action name="edit">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+		<param name="handle" required="false">
+			<validator name="inLengthRange" min="1" max="32">
+				<error>Długość loginu nie może przekraczać 32 znaków</error>
+			</validator>
+		</param>
+		<param name="passwd" required="false">
+			<validator name="inLengthRange" min="1" max="32">
+			    <error>Długość hasła nie może przekraczać 32 znaków</error>
+			</validator>
+		</param>
+		<param name="email">
+			<validator name="inLengthRange" min="1" max="64">
+			    <error>Długość adresu e-mail nie może przekraczać 64 znaków</error>
+			</validator>
+			<validator name="isMailAddress">
+			    <error>Adres e-mail ma niepoprawny format</error>
+			</validator>
+		</param>
+		<param name="type" required="false">
+			<validator name="inRange" min="0" max="5"/>
+		</param>
+	</action>
+
+	<action name="delete">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="list">
+		<param name="return" required="false"/>
+	</action>
+
+	<action name="register">
+		<param name="agree"/>
+		<param name="handle">
+			<validator name="isHandle">
+				<error>Login musi składać się z co najmniej 3 znaków alfanumerycznych (w tym znaku '.') i nie może rozpoczynać się cyfrą</error>
+			</validator>
+		</param>
+		<param name="passwd">
+			<validator name="isPassword">
+				<error>Hasło musi składać się z co najmniej 6 znaków alfanumerycznych i nie może rozpoczynać się cyfrą</error>
+			</validator>
+		</param>
+		<param name="passwd_confirm">
+			<validator name="isPassword">
+				<error>Hasło musi składać się z co najmniej 6 znaków alfanumerycznych i nie może rozpoczynać się cyfrą</error>
+			</validator>			
+		</param>
+		<param name="email">
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>
+		</param>
+		<param name="email_confirm" required="false">
+			<validator name="isMailAddress">
+				<error>Wprowadź proszę poprawny adres poczty elektronicznej</error>
+			</validator>
+		</param>
+	</action>
+
+	<action name="login">
+		<template/>
+		<param name="login">	
+			<validator name="inLengthRange" min="1" max="32">
+			    <error>Login musi posiadać od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="password">	
+			<validator name="inLengthRange" min="1" max="32">
+			    <error>Hasło musi posiadać od 1 do 32 znaków</error>
+			</validator>
+		</param>
+		<param name="remember" required="false"/>
+	</action>
+
+	<action name="guestlogin"/>
+	
+	<action name="activate">
+		<param name="id" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="hash" required="false">
+			<validator name="inLengthRange" min="1" max="35"/>
+		</param>
+		<param name="message" required="false">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="resetpassword">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="resetpasswordform" cache="false"/>
+
+</module>

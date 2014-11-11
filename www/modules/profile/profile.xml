@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Profile użytkowników</description>
+
+	<database/>
+
+	<action name="add">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="value"/>
+	</action>
+
+	<action name="edit" extend="public:add"/>
+
+	<action name="addmultiple">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="prefs"/>
+	</action>
+	
+	<action name="editmultiple" extend="public:addmultiple"/>
+
+	<action name="delete">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="deleteall">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="get">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="getall">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+	
+</module>

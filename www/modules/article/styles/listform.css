@@ -1,0 +1,17 @@
+input.text.priority {
+	width: 25px;
+	text-align: center;
+}
+
+#menu {
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+}
+
+#menu .scheme_button {
+	float: right;
+	margin-left: 10px;
+}

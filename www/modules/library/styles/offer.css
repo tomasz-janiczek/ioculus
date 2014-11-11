@@ -1,0 +1,132 @@
+#action {
+	vertical-align:		top;
+}
+
+#action .library_offer_box {
+	margin-top:		10px;
+}
+
+#action .library_offer_leftofferbox {
+	padding:			0;
+	margin-left:		0;
+	margin-right:		0;
+	width:			250px;
+}
+
+#action .library_offer_rightofferbox {
+	padding:			0;
+	padding-left:		10px;
+	margin-left:		0;
+	margin-right:		0;
+	width:			250px;
+}
+
+
+#action #library_offer {
+	width:			100%;
+}
+
+#action #library_offer #row_top {
+	width:			100%;
+}
+
+#action #library_offer #row_top td.row_top_td {
+	vertical-align:		top;
+}
+
+#action #library_offer #column_left,
+#action #library_offer #column_right {
+	vertical-align:		top;
+}
+
+#action #library_offer #column_left {
+	text-align:			left;
+}
+
+#action #library_offer #column_right {
+	width:			1px;
+}
+
+#action #library_offer #opinions {
+	margin-top:		0;
+}
+
+#action #library_offer #opinions .scheme_boxblue_td2 {
+	height:			200px;
+}
+
+#action #library_offer #opinions ul,
+#action #library_offer #opinions ul li,
+#action #library_offer #opinions table td {
+	color:			white;
+}
+
+#action #library_offer #tools {
+	width:			250px;
+	margin-left:		0;
+	margin-right:		0;
+	padding-left:		15px;
+}
+
+#action #library_offer #tools td.scheme_boxlight2_td2,
+#action #library_offer #coop td.scheme_boxgreen1_td2 {
+	height:			257px;
+}
+
+#action #library_offer #coop td.scheme_boxgreen1_td2 * {
+	color:			black;
+}
+
+#action #library_offer #coop {
+	width:			250px;
+	margin-left:		0;
+	margin-right:		0;
+}
+
+#action #library_offer #register {
+	margin:			15px auto 0px 0;
+}
+
+#action #library_offer .library_offer_topbox {
+	margin-top:		0;
+}
+
+#action #library_offer #row_bottom {
+	margin:			0;
+	width:			100%;
+}
+
+#action #library_offer #row_bottom td {
+	text-align:			left;
+}
+
+#action #library_offer .scheme_content4 div {
+	margin-top:			5px;
+	font-weight:		bold;
+}
+
+#action #library_offer .scheme_content4 ul {
+	margin:				5px auto 0 auto;
+	padding:			0 0 0 20px;
+	width:				100%;
+}
+
+#action #library_offer_content {
+	margin:				0;
+	padding:			0;
+	text-align:			left;
+}
+
+#action #library_offer_content .scheme_boxlight4 {
+	margin:				0;
+}
+
+#action #library_offer_content p#library_offer_back {
+	text-align:			right;
+	padding-right:		15px;
+	margin-bottom:		5px;
+}
+
+#action #library_offer_content p#library_offer_back a {
+	font-weight:		bold;
+}

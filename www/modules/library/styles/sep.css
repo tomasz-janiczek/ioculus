@@ -1,0 +1,239 @@
+#action table#library_sep_layout {
+	width:			100%;
+	margin-top:		10px;
+}
+
+#action td#library_sep_col1 {
+	width:			520px;
+}
+
+#action td#library_sep_col1,
+#action td#library_sep_col2 {
+	vertical-align:		top;
+	text-align:			center;
+}
+
+#action #library_sep_register td.scheme_boxyellow_td2 {
+	text-align:			center;
+}
+
+#action #library_sep_register td.scheme_boxyellow_td2 p {
+	text-align:			left;
+	line-height:		16px;
+}
+
+#action #library_sep_register td.scheme_boxyellow_td2 div {
+	background:			url("/www/modules/library/images/button_green.gif") no-repeat;
+	cursor:				pointer;
+	text-align:			center;
+	width:				149px;
+	height:				37px;
+	margin:				0 auto 0 auto;
+}
+
+#action #library_sep_register td.scheme_boxyellow_td2 div p {
+	font-family:		Trebuchet MS, Verdana, sans-serif;
+	font-size:			16px;
+	font-weight:		bold;
+	color:				#3b3c00;
+	padding-top:		8px;
+	text-align:			center;
+	cursor:				pointer;
+}
+
+#action #library_sep_organizers li,
+#action #library_sep_organizers li * {
+	color:			black;
+}
+
+#action .box {
+	margin-bottom:		10px;
+}
+
+#action td#library_sep_col1 table#library_sep_col1_layout {
+	width:			100%;
+}
+
+#action td#library_sep_top_logo {
+	background:			url("/www/modules/library/images/top_logo.jpg") no-repeat right;
+	width:				100%;
+	height:				104px;
+	padding-left:		170px;
+	padding-top:		10px;
+	text-align:			left;
+	vertical-align:		top;
+}
+
+#action td#library_sep_top_logo p {
+	margin:				2px 0 0px 0;
+	font-size:			12px;
+}
+
+#action td#library_sep_top_logo p,
+#action td#library_sep_top_logo p * {
+	color:			#676767;
+}
+
+#action td#library_sep_top_logo p:first-child {
+	margin-top:		0;
+}
+
+#action span.cap {
+	font-size:			15px;
+	font-weight:		bold;
+}
+
+#action span.cap1 {
+	font-size:			24px;
+	font-weight:		bold;
+}
+
+#action td#library_sep_invite {
+	padding-left:		30px;
+}
+
+#action td#library_sep_invite,
+#action td#library_sep_invite * {
+	color:			#218ecf;
+}
+
+#action td#library_sep_title,
+#action span#library_sep_title_row2 {
+	padding-left:		25px;
+	font-size:			18px;
+	font-weight:		bold;
+	font-family:		Verdana;
+}
+
+#action td#library_sep_title,
+#action td#library_sep_title * {
+	color:			black;
+}
+
+#action span#library_sep_title_row2 {
+	padding-left:		190px;
+}
+
+#action span#library_sep_title_row3 {
+	color:				#676767;
+	font-weight:		bold;
+	font-style:			italic;
+	font-family:		Verdana, Arial, Helvetica, sans-serif;
+	padding-left:		290px;
+}
+
+#action td#library_sep_plan {
+	padding-top:		30px;
+}
+
+#action td#library_sep_bar {
+	padding:			15px 0 0px 0;
+	text-align:			center;
+}
+
+#action td#library_sep_logos table {
+	margin-top:			25px;
+	width:				100%;
+	border-collapse:	separate;
+	border-spacing:		0 15px;
+}
+
+#action td#library_sep_logos table td {
+	text-align:			center;
+	vertical-align:		middle;
+}
+
+#action td#library_sep_logos img {
+//	margin:			0 40px 0 0;
+	margin:			0 auto 0 auto;
+}
+
+#action td#library_sep_desc,
+#action td#library_sep_connection {
+	padding-top:		0;
+}
+
+#action td#library_sep_desc p,
+#action td#library_sep_connection p {
+	line-height:		18px;
+	padding:			0 10px 5px 10px;
+	margin:			0 auto 0 auto;
+	text-indent:		30px;
+}
+
+#action td#library_sep_desc table.scheme_boxlight3 td {
+	padding:			5px 0 0 0;
+}
+
+#action td#library_sep_recomm table.scheme_boxlight3 table {
+	width:				100%;
+	height:				100%;
+}
+
+#action td#library_sep_recomm table.scheme_boxlight3 td {
+	border-left:		0;
+	border-right:		0;
+	border-bottom:		0;
+	padding:			5px 0 0 0;
+	text-align:			center;
+	vertical-align:		top;
+}
+
+#action td#library_sep_recomm table.scheme_boxlight3 td.scheme_boxlight3_td1 {
+	text-align:			left;
+}
+
+#action td#library_sep_recomm table.scheme_boxlight3 td.scheme_boxlight3_td2 img {
+	display:			block;
+	margin:				0 auto 0 auto;
+	padding:			5px;
+	background:			white;
+	border:				1px solid #eeeeee;
+}
+
+#action td#library_sep_recomm tr#library_sep_recomm_text td {
+	text-align:			left;
+	padding-right:		20px;
+	padding-left:		20px;
+}
+
+#action td#library_sep_plan ul {
+	padding-left:		30px;
+}
+
+#action td#library_sep_plan ul li {
+	line-height:		22px;
+	font-style:			italic;
+}
+
+#action td#library_sep_plan ul li span {
+	color:			#0f4d72;
+	font-style:			normal;
+}
+
+#action .scheme_form input.text,
+#action .scheme_form input.password {
+	width:				280px;
+}
+
+#action .library_sep_form_text {
+	padding:			5px 20px 5px 20px;
+}
+
+#action #library_sep_agree {
+	font-size:			9px;
+}
+
+#action #library_sep_button_left input.image {
+	margin-right:		5px;
+	margin-left:		auto;
+}
+
+#action #library_sep_button_right input.image {
+	margin-left:		5px;
+	margin-right:		auto;
+}
+
+#action #sep_dvd span {
+	font-weight:		bold;
+}

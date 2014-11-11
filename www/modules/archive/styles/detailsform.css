@@ -1,0 +1,61 @@
+table.scheme_admin>tbody>tr>td table#itemList {
+	margin-top:		10px;
+	border-collapse:	separate;
+	border-spacing:		20px 0px;
+}
+
+table.scheme_admin>tbody>tr>td table#itemList td {
+	text-align:			center;
+}
+
+table.scheme_admin>tbody>tr>td table#itemList td#imageName {
+	cursor:			pointer;
+	text-align:			left;
+}
+
+table.scheme_admin>tbody>tr>td table#params {
+	margin-bottom:		5px;
+	border-collapse:	separate;
+	border-spacing:		20px 0px;
+}
+
+table.scheme_admin>tbody>tr>td table.menu {
+	margin:			0px auto 5px auto;
+	border-collapse:	separate;
+	border-spacing:		5px 2px;
+}
+
+table.scheme_admin>tbody>tr>td table.menu td {
+	text-align:			left;
+}
+
+table.scheme_admin td table.menu td.title {
+	font-weight:		bold;
+	text-decoration:	underline;
+	font-size:			11px;
+}
+
+#action p.title {
+	font-weight:		bold;
+	font-size:			18px;
+	margin:			0 auto 15px auto;
+	padding:			0 0 0 20px;
+	text-align:			left;
+	vertical-align:		middle;
+}
+
+span.popupText_B {
+	font-weight:		bold;
+}
+
+p.popupTextType {
+	text-align:		center;
+}
+
+td#content table.menu td.iconCell {
+	width:			25px;
+}
+
+td#content table.menu td.iconLink {
+	font-weight:		bold;
+}

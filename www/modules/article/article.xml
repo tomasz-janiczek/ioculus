@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Artykuły</description>
+
+	<action name="listform" defaultAction="true" pagination="true" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+
+	<action name="addform" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+	
+	<action name="editform" cache="false">
+		<template>addform.tpl</template>
+		<style>addform.css</style>
+		<script>addform.js</script>
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+
+	<action name="detailsform" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+
+	<action name="add">
+		<param name="sectionid">
+			<validator name="isId"/>
+		</param>
+		<param name="title">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="content"/>
+		<param name="description" required="false">
+			<validator name="inLengthRange" min="1" max="1024"/>
+		</param>
+		<param name="image_id" required="false">
+			<modifier name="basename"/>
+		</param>
+	</action>
+
+	<action name="edit" extend="public:add">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="delete">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="exists">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<action name="list">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="setpriority">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="get">
+		<param name="id"/>
+		<param name="all" required="false"/>
+	</action>
+
+	<!-- SECTIONS -->
+
+	<action name="listsectionform" defaultAction="true" cache="false">
+		<param name="type" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="addsectionform" cache="false"/>
+
+	<action name="editsectionform"  cache="false">
+		<template>addsectionform.tpl</template>
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+
+	<action name="listsection">
+		<param name="return" required="false"/>
+	</action>
+
+	<action name="addsection">
+		<param name="name">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="type">
+			<validator name="isId"/>
+		</param>
+		<param name="description" required="false">	
+			<validator name="inLengthRange" min="1" max="1024"/>
+		</param>
+		<param name="image_id" required="false">	
+			<modifier name="basename"/>
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="editsection" extend="public:addsection">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="deletesection">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="sectionexists">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<!-- SECTION TYPES -->
+
+	<action name="listtypeform" cache="false"/>
+
+	<action name="addtypeform" cache="false">
+		<template>edittypeform.tpl</template>
+	</action>
+
+	<action name="edittypeform" cache="false">
+		<param name="id">
+			<modifier name="tolower"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="addtype">
+		<param name="name">
+			<modifier name="tolower"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="description" required="false">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="edittype">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="name">
+			<modifier name="tolower"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="description" required="false">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="deletetype">
+		<param name="id"/>
+	</action>
+
+	<action name="gettypeid">
+		<template/>
+		<param name="name">
+			<modifier name="tolower"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<!-- SECTION ARTICLES -->
+
+	<action name="listsectionarticles">
+		<param name="id" required="false">
+			<validator name="isId"/>
+		</param>
+		<param name="return" required="false"/>
+	</action>
+
+	<action name="addsectionarticle">
+		<param name="section_id">	
+			<validator name="isId"/>
+		</param>
+		<param name="article_id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="deletesectionarticle">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="sectionArticleExists">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<!-- OTHER -->
+
+	<action name="selectform">
+		<param name="editor_id">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="selectfileform">
+		<param name="editor_id">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="updatesectionrights"/>
+
+</module>

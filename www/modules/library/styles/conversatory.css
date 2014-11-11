@@ -1,0 +1,155 @@
+#action {
+	vertical-align:		top;
+}
+
+#action #library_layout {
+	width:				100%;
+}
+
+#action #library_nav {
+	margin-top:		0;
+}
+
+#action #library_bar {
+	margin:			10px auto 10px auto;
+}
+
+#action #library_col3 a {
+	color:			#204D6B;
+}
+
+#action td#library_col1,
+#action td#library_col2,
+#action td#library_col3 {
+	vertical-align:		top;
+	text-align:			left;
+}
+
+#action #library_col1 .scheme {
+	margin-bottom:		15px;
+}
+
+#action table#library_layout #library_col1 {
+	width:			229px;
+}
+
+#action table#library_layout #library_col2 {
+	width:			15px;
+	background:		url("/www/images/index_col2_dot.jpg") repeat-y center;
+}
+
+#action .text1,
+#action .text2 {
+	font-size:		11px;
+	line-height:	18px;
+}
+
+#action .text2 {
+	text-indent:	40px;
+}
+
+#action .conv_block {
+	margin-bottom:	10px;
+}
+
+#action .conv_block_desc td {
+	line-height:	17px;
+}
+
+#action .conv_block_desc td.conv_icon {
+	padding:		5px 20px 5px 15px;
+}
+
+#action #conv_logo {
+	background:		url("/www/modules/library/images/conv_logo.gif") no-repeat 10px 30px;
+	height:			auto;
+	margin:			0 0 30px 0;
+	padding:		10px 0 0 0;
+}
+
+#action .conv_text1 {
+	text-indent:	40px;
+	line-height:	16px;
+}
+
+#action .conv_more {
+	color:			#204D6B;
+	font-weight:	bold;
+}
+
+#action .conv_click {
+	font-weight:	bold;
+	line-height:	16px;
+	margin:			10px auto 10px auto;
+}
+
+#action .conv_logo_text1,
+#action .conv_logo_text2 {
+	color:			#204D6B;
+	font-size:		23px;
+	font-weight:	bold;
+	font-family:	Lucida Sans Unicode, Verdana, sans-serif;
+	padding-left:	160px;
+}
+
+#action .conv_logo_text1 {
+	font-size:		20px;
+	padding-left:	80px;
+}
+
+#action .conv_logo_text3 {
+	padding-top:	25px;
+	margin-bottom:	30px;
+	color:			gray;
+	font-size:		12px;
+	font-weight:	bold;
+	font-family:	Lucida Sans Unicode, Verdana, sans-serif;
+	text-align:		center;
+}
+
+#action .conv_logo_text1 span {
+	font-size:		26px;
+	color:			#204D6B;
+}
+
+#action .conv_logo_text2 span {
+	color:			#204D6B;
+	font-size:		32px;
+}
+
+#action #library_topart ul * {
+	color:			#FFFFFF;
+}
+
+#action #library_newest ul,
+#action #library_topart ul,
+#action #library_meetings ul {
+	border:			red;
+	margin:			0;
+	padding-left:	10px;
+	line-height:	20px;
+}
+
+#action #library_meetings ul li {
+	line-height:	14px;
+	margin-top:		8px;
+}
+
+#action #library_meetings ul li a {
+	font-weight:	bold;
+}
+
+#action #library_meetings ul li a span {
+	font-size:		9px;
+	font-weight:	normal;
+}
+
+#action #library_meetings ul li.current a {
+	text-decoration:underline;
+}
+
+#action #library_meetings p {
+	font-size:		9px;
+	color:			black;
+	margin-top:		15px;
+}

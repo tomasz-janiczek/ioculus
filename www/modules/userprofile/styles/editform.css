@@ -1,0 +1,24 @@
+table#index td.index_08#action {
+	padding-top:		0;
+	vertical-align:		top;
+}
+
+#action table#foo.scheme_admintopbar {
+	margin-bottom:		20px;
+}
+
+#action .scheme_tabpane td {
+	vertical-align:		top;
+}
+
+#action .scheme_tabpane table.userprofile_groups {
+	border-collapse:	collapse;
+}
+
+#action .scheme_tabpane table.userprofile_groups td {
+	vertical-align:		middle;
+}
+
+#action .scheme_tabpane table.userprofile_groups td.userprofile_groups_chk {
+	width:				26px;
+}

@@ -1,0 +1,28 @@
+table.scheme_boxgrey {
+	border:			0;
+	margin:			0 0 0 auto;
+	padding:			0;
+	width:			229px;
+	height:			auto;
+}
+
+table.scheme_boxgrey tr td.scheme_boxgrey_td1 {
+	background:		url("/www/images/box_grey_1.jpg") no-repeat;
+	width:			229px;
+	height:			18px;
+	font-family:		Arial, Verdana, sans-serif;
+	font-weight:		bold;
+	font-size:			14px;
+	padding-left:		20px;
+	text-align:			left;
+	vertical-align:		top;
+}
+
+table.scheme_boxgrey tr td.scheme_boxgrey_td2  {
+	width:			229px;
+	font-size:			10px;
+	padding:			0;
+	text-align:			left;
+	vertical-align:		top;
+	color:			white;
+}

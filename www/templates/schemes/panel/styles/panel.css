@@ -1,0 +1,112 @@
+table.scheme_panel {
+	border:			0;
+	margin:			15px 0 15px auto;
+	padding:			0;
+	width:			227px;
+	height:			auto;
+}
+
+table.scheme_panel td.scheme_panel_td1 {
+	background-image:	url("/www/images/box_blue_1.jpg");
+	background-repeat:	no-repeat;
+	width:			100%;
+	height:			18px;
+	font-family:		Arial, Verdana, sans-serif;
+	font-weight:		bold;
+	font-size:			14px;
+	padding-left:		20px;
+	text-align:			left;
+	vertical-align:		top;
+}
+
+table.scheme_panel td.scheme_panel_td2,
+table.scheme_panel td.scheme_panel_td4 {
+	height:			10px;
+	background-color:	#1c5177;
+	width:			100%;
+}
+
+table.scheme_panel ul {
+	list-style:			url("/www/images/arrow_green.jpg");
+	margin:			0;
+	padding:			0 0 0 30px;
+}
+
+table.scheme_panel ul li,
+table.scheme_panel ul li a {
+	color:			white;
+}
+
+table.scheme_panel ul li {
+	margin:			0;
+	padding:			4px 0 4px 0;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane {
+	background-color:	#19496b;
+	float:				left;
+	/*	height:1200px; */
+	height:			100%;
+	width:			100%;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .dhtmlgoodies_panel {
+	margin-bottom:		1px;	
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .panelContent{
+	font-size:			0.7em;
+	padding-left:		2px;
+	padding-right:		2px;	
+	overflow:			hidden;
+	position:			relative;
+	clear:			both;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .panelContent div {
+	position:			relative;
+	color:			white;
+	padding-left:		0px;
+	vertical-align:		middle;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar {
+	height:			25px;
+	padding-right:		5px;
+	cursor:			pointer;
+	overflow:			hidden;
+	background-color:	#1c5177;
+	vertical-align:		middle;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar span {
+	display:			block;
+	color:			white;
+	font-family:		Verdana, sans-serif;
+	font-size:			11px;
+	font-weight:		normal;
+	line-height:		25px;
+	vertical-align:		middle;
+	float:				left;
+	width:			auto;
+	padding-left:		10px;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar img.dhtmlgoodies_xpPane_dotimg {
+	display:			block;
+	clear:			none;
+	float:				left;
+	cursor:			pointer;
+	margin:			10px 0 0 8px;
+}
+
+table.scheme_panel #dhtmlgoodies_xpPane .dhtmlgoodies_panel .topBar img.dhtmlgoodies_xpPane_updown {
+	float:				right;
+	cursor:			pointer;
+	visibility:			hidden;
+}
+
+#otherContent{	/* Normal text content */
+	float:				left;	/* Firefox - to avoid blank white space above panel */
+	padding-left:		10px;	/* A little space at the left */
+}	

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Moduł aktualności</description>
+
+	<action name="listnewses">
+		<param name="filters" required="false"/>
+	</action>
+	
+	<action name="intro" defaultAction="true" cache="false"/>
+	<action name="list" pagination="true" cache="false"/>
+
+	<action name="addform">
+		<template/>
+	</action>
+
+	<action name="details">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="delete">
+		<template/>
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="editform">
+		<template/>
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="add">
+		<template/>
+		<param name="title">
+			<validator name="inLengthRange" min="1" max="255">
+				<error title="Błąd ASDkASkasA">Długość tytułu nie może przekraczać 255 znaków</error>
+			</validator>
+		</param>
+		<param name="content">
+			<validator name="inLengthRange" min="1" max="1024">
+			    <error title="Błąd ASDkASkasA">Długość tytułu nie może przekraczać 1024 znaków</error>
+			</validator>
+		</param>
+		<param name="image_gallery" required="false">
+			<modifier name="basename"/>
+		</param>
+		<param name="image_file" type="file" required="false"/>
+	</action>
+
+	<action name="edit">
+		<template/>
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+		<param name="title">
+			<validator name="inLengthRange" min="1" max="255">
+				<error title="Błąd ASDkASkasA">Długość tytułu nie może przekraczać 255 znaków</error>
+			</validator>
+		</param>
+		<param name="content">
+			<validator name="inLengthRange" min="1" max="1024">
+			    <error title="Błąd ASDkASkasA">Długość tytułu nie może przekraczać 1024 znaków</error>
+			</validator>
+		</param>
+		<param name="image_gallery">
+			<modifier name="basename"/>
+		</param>
+		<param name="image_file" type="file" required="false"/>
+	</action>
+
+</module>

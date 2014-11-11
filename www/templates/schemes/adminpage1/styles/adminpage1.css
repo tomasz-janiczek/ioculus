@@ -1,0 +1,26 @@
+table#index td.index_08#action {
+	padding-top:		0;
+	vertical-align:		top;
+}
+
+table.scheme_adminpage1 {
+	width:			100%;
+	height:			auto;
+	margin:			0;
+	padding:			0;
+}
+
+table.scheme_adminpage1_topbar {
+	margin:			0;
+	padding:			0;
+	background:		url("/www/images/admin/bar_yellow_bg.jpg") repeat-x;
+	width:			100%;
+	height:			23px;
+}
+
+table.scheme_adminpage1_topbar td {
+	text-align:			left;
+	vertical-align:		middle;
+	color:			#273d64;
+	padding-left:		25px;
+}

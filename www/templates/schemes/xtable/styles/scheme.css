@@ -1,0 +1,101 @@
+.scheme_xtable * {
+	font-family: Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+}
+
+.scheme_xtable p {
+	margin-bottom:0px;
+	font-weight:bold;
+}
+
+.scheme_xtable a {
+	text-decoration: none;
+}
+
+.scheme_xtable input.text {
+	width: auto;
+	border: 1px solid gray;
+}
+
+.scheme_xtable .tableWidget_a_over {
+	text-decoration: underline;
+}
+
+/* Start layout CSS */
+.scheme_xtable .tableWidget_headerCell,
+.scheme_xtable .tableWigdet_headerCellOver,
+.scheme_xtable .tableWigdet_headerCellDown {	/* General rules for both standard column header and mouse on header of sortable columns */
+	vertical-align: middle;
+	cursor:pointer;
+	border-bottom:3px solid #d0b648;
+	border-right:1px solid #d0b648;
+	background: url("/www/images/admin/bar_yellow_bg.jpg") repeat-x #f7dc47;
+}
+	
+.scheme_xtable .tableWidget_headerCell{	/* Standard column header */
+}
+
+.scheme_xtable .tableWigdet_headerCellOver{	/* Rollover on sortable column header */
+	border-top: 2px solid #FFC83C;
+}
+
+.scheme_xtable .tableWidget tbody .tableWidget_dataRollOver{	/* Rollover style on mouse over (Data) */
+	background-color: 	#f1f1f1;
+}
+	
+.scheme_xtable. tableWigdet_headerCellDown{
+	border-top:2px solid #FFC83C;	
+	background-color:#DBD8C5;
+	border-left:1px solid #ACA899;
+	border-right:1px solid #FFF;			
+}
+
+.scheme_xtable .tableWidget td {
+	margin:0px;
+	padding:2px;
+	padding-left:3px;
+	border-bottom:1px solid #EAE9E1;	/* Border bottom of table data cells */
+}
+
+.scheme_xtable .tableWidget tbody{
+	background-color:#FFF;
+}
+
+.scheme_xtable .tableWidget{
+	font-family:arial;
+	font-size:12px;	
+	width:400px;
+	border-collapse: separate;
+}
+		
+/* End layout CSS */
+	
+	
+.scheme_xtable {
+	border:1px solid #ACA899;	/* Border around entire widget */
+	height: 200px;
+	overflow:auto;
+	overflow-y:auto;
+	overflow:-moz-scrollbars-vertical;
+	width:400px;
+}
+	
+html>body div.scheme_xtable {
+	overflow: hidden;
+	width:400px;
+}
+
+.scheme_xtable .tableWidget thead{
+	position:relative;
+}
+
+.scheme_xtable .tableWidget thead tr{
+	position:relative;
+	top:0px;
+	bottom:0px;
+}
+
+.scheme_xtable .tableWidget .scrollingContent{
+	overflow-y:auto;
+	overflow:-moz-scrollbars-vertical;
+	width:100%;
+}

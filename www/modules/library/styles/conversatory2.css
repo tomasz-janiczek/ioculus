@@ -1,0 +1,33 @@
+#action {
+	vertical-align:		top;
+}
+
+#action #library_main_prev {
+	width:				100%;
+	height:				auto;
+}
+
+#action #library_main_prev .scheme_boxlight4_td2 {
+	padding:			0 20px 0 20px;
+	text-align:			justify;
+	line-height:		18px;
+}
+
+#action #library_main_prev_paginate {
+	padding:			0 0 20px 0;
+	text-align:			center;
+}
+
+#action #library_main_prev table td#library_main_prev_date {
+	font-weight:		bold;
+	height:			30px;
+	vertical-align:		middle;
+	text-align:			left;
+}
+
+#action #library_main_prev table td#library_main_prev_content img#library_main_prev_image {
+	float:				left;
+	padding:			5px;
+	margin:			5px 10px 0px 0px;
+	border:			1px solid #eeeeee;
+}

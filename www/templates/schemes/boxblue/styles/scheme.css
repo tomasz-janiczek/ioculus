@@ -1,0 +1,36 @@
+.scheme_boxblue {
+	width: 229px;
+	margin: 0;
+	border-bottom: 5px solid #314d62;
+}
+
+.scheme_boxblue .scheme_boxblue_header {
+	background: url("/www/templates/schemes/boxblue/images/boxblue_top.jpg") no-repeat top left;
+	height: 18px;
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 20px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.scheme_boxblue .scheme_boxblue_header_dot {
+	background: url("/www/images/dot_grey.jpg") no-repeat center left;
+}
+
+.scheme_boxblue .scheme_boxblue_body {
+	background: url("/www/templates/schemes/boxblue/images/boxblue_body.png") repeat-x #24587f;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	color: white;
+}
+
+.scheme_boxblue .scheme_boxblue_body_dot {
+	border: 1px solid #314d62;
+}
+
+.scheme_boxblue .scheme_boxblue_body * {
+	color: white;
+}

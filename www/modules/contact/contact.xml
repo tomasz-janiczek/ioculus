@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>adocyn</author>
+	<version>0.01</version>
+	<description>[Moduł kontakt] Formularz kontaktowy - egie.pl</description>
+
+	<dependencies>
+		<module>article</module>
+		<module>userprofile</module>
+		<module>vcard</module>
+	</dependencies>
+	
+	<menu>
+		<item name="Kontakt" module="contact" action="showform"/>
+	</menu>
+	
+	<action name="showform" defaultAction="true" cache="false">
+		<param name="id" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="downloadvcard">
+		<template/>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="send">
+		<template/>
+		<param name="contact_id">
+			<validator name="isId"/>
+		</param>
+		<param name="fullname">
+			<validator name="inLengthRange" min="3" max="128"/>
+			<validator name="isName"/>
+			<error>Podaj swoje imię i nazwisko</error>
+		</param>
+		<param name="type">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="company" required="false">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="phone">
+			<validator name="isPhoneNumber"/>
+			<error>Podaj swój numer telefonu</error>
+		</param>
+		<param name="fax" required="false">
+			<validator name="isPhoneNumber"/>
+		</param>
+		<param name="email" required="false">
+			<validator name="inLengthRange" min="3" max="128"/>
+			<validator name="isMailAddress"/>
+		</param>
+		<param name="title">
+			<validator name="inLengthRange" min="3" max="64"/>
+		</param>
+		<param name="content">
+			<validator name="inLengthRange" min="3" max="4096"/>
+		</param>
+		<param name="vcard" type="file" max="1M" ext="vcf" mime="text/x-vcard" required="false"/>
+		<param name="attach" type="file" max="1M" required="false"/>
+	</action>
+
+</module>

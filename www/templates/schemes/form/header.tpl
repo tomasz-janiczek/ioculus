@@ -1,0 +1,2 @@
+<form {$iScheme.serializedAttrs} action="{$iScheme.attr.action}" method="{$iScheme.attr.method|default:post}" {if $iScheme.attr.formName}name="{$iScheme.attr.formName}"{/if}{if $iScheme.attr.enctype} enctype="{$iScheme.attr.enctype}"{/if}>
+	

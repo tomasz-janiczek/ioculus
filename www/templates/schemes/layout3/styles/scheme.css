@@ -1,0 +1,14 @@
+.scheme_layout3 {
+	padding: 10px;
+	overflow: hidden;
+}
+
+.scheme_layout3_image {
+	float: left;
+	width: 160px;
+}
+
+.scheme_layout3_body {
+	float: right;
+	width: 300px;
+}

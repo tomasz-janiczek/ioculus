@@ -1,0 +1,22 @@
+table.scheme_content11 ul {
+	width:			100%;
+	padding-left:		11px;
+}
+
+table.scheme_content11 ul li {
+	width:			100%;
+	color:			white;
+	font-weight:		bold;
+	padding-bottom:	10px;
+}
+
+table.scheme_content11 ul li:last-child {
+	padding-bottom:	0;
+}
+
+table.scheme_content11 ul li span {
+	color:			#b7c2c8;
+	width:			100%;
+	text-align:			right;
+	font-size:			9px;
+}

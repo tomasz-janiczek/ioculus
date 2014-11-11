@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<type>system</type>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Pliki - upload, przechowywanie i zarządzanie</description>
+
+	<action name="listform" defaultAction="true" cache="false"/>
+
+	<action name="addform" cache="false"/>
+
+	<action name="detailsform" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+
+	<action name="list" cache="false"/>
+
+	<action name="exists">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="details">
+		<param name="id">
+			<validator name="isId"/>
+		</param>	
+	</action>
+
+	<action name="add"/>
+
+	<action name="delete">
+		<param name="id">
+			<validator name="inLengthRange" min="0" max="255"/>
+		</param>	
+	</action>
+
+	<action name="clear">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="rescan">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>	
+
+	<action name="islocked">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>	
+
+	<action name="lock">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>	
+
+	<action name="unlock">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>	
+
+	<action name="switchlock">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>	
+
+	<!-- ITEMS -->
+
+	<action name="listitemform" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="edititemform" cache="false">
+		<param name="id" required="false">
+			<validator name="inLengthRange" min="0" max="255"/>
+		</param>
+	</action>
+
+	<action name="uploadform" cache="false">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="additem">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="edititem" extend="public:additem">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="description">
+			<validator name="inLengthRange" min="0" max="255"/>
+		</param>
+	</action>
+
+	<action name="deleteitem">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="itemlist">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="getpath">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="absolute" required="false"/>
+	</action>
+
+	<action name="itemexists">
+		<template/>
+		<param name="id">	
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<action name="validate">
+		<template/>
+		<param name="id">	
+			<modifier name="lowercase"/>
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="name">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="refresh">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="upload">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+		<param name="var">
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+		<param name="file" type="file" required="false"/>
+	</action>
+
+	<action name="download">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="archiveid" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="getitempath">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="absolute" required="false"/>
+	</action>
+</module>

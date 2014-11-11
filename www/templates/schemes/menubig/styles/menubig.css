@@ -1,0 +1,15 @@
+table.scheme_menubig {
+	width:			420px;
+	height:			auto;
+	margin:			5px;
+}
+
+table.scheme_menubig td.scheme_menu_button {
+	padding:			0 2px 0 2px
+}
+
+table.scheme_menubig td table.scheme_button {
+	margin:			5px 5px 5px 0px;
+	width:			100px;
+	height:			90px;
+}

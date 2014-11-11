@@ -1,0 +1,29 @@
+table.scheme_imageselect td {
+	text-align:			left;
+	width:			auto;
+}
+
+table.scheme_imageselect td input.file {
+	width:			auto;
+}
+
+table.scheme_imageselect td table {
+	margin:			0;
+}
+
+table.scheme_imageselect td table tr td {
+	vertical-align:		bottom;
+	padding:			0;
+}
+
+table.scheme_imageselect img.scheme_imageselect_button {
+	margin:			0 0 0 10px;
+	cursor:			pointer;
+}
+
+table.scheme_imageselect td label#imageLabel {
+	margin:			0;
+	padding:			0;
+	width:			auto;
+	text-align:			left;
+}

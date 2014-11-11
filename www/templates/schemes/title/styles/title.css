@@ -1,0 +1,21 @@
+table.scheme_title {
+	width:			auto;
+	height:			auto;
+	margin:			5px;
+}
+
+table.scheme_title td {
+	text-align:			left;
+	vertical-align:		middle;
+}
+
+table.scheme_title table td {
+	text-align:			left;
+	vertical-align:		middle;
+}
+
+table.scheme_title table td.scheme_title_content {
+	padding-left:		10px;
+	font-size:			14px;
+	font-weight:		bold;
+}

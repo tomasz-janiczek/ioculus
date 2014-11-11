@@ -1,0 +1,18 @@
+.scheme_layout1 {
+	overflow: hidden;
+	width: 100%;
+}
+
+.scheme_layout1_image,
+.scheme_layout1_body {
+	clear: none;
+	float: left;
+}
+
+.scheme_layout1_image {
+	margin-right: 10px;
+}
+
+.scheme_layout1_body {
+	width: auto;
+}

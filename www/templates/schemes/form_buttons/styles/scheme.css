@@ -1,0 +1,15 @@
+.scheme_form_buttons {
+	margin-top: 20px;
+}
+
+.scheme_form_buttons .scheme_form_buttons_content {
+	width: 330px;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+}
+
+.scheme_form_buttons input.image {
+	display: block;
+	float: left;
+	padding: 0 10px;
+}

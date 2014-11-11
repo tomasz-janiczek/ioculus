@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.3</version>
+	<description>Zarządzanie prawami użytkowników i grup</description>
+
+	<!-- RIGHTS -->
+	
+	<action name="listform" defaultAction="true" pagination="true" cache="false"/>
+	
+	<action name="addform" cache="false"/>
+
+	<action name="editform" cache="false">
+		<template>addform.tpl</template>
+		<style>addform.css</style>
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="add">
+		<param name="areaid">	
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="description">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="edit" extend="public:add">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="delete">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="list">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="return" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="exists">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="areaid" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+	
+	<!-- AREAS -->
+
+	<action name="addareaform" cache="false"/>
+	
+	<action name="editareaform" cache="false">
+		<template>addareaform.tpl</template>
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="listareaform" pagination="true" cache="false"/>
+
+	<action name="areaexists">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<action name="addarea">
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="description">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="editarea" extend="public:addarea">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="deletearea">
+		<param name="id">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<!-- GROUPS -->
+
+	<action name="listgroupform">
+		<style>addform.css</style>
+	</action>
+
+	<action name="addgrouprightform" cache="false">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="area_id" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="addgroupright">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="rid">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="deletegroupright">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+		<param name="rid">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<!-- USERS -->
+
+	<action name="listuserform">
+		<style>addform.css</style>
+	</action>
+
+	<action name="listuser">
+		<param name="uid">	
+			<validator name="isId"/>
+		</param>
+	</action>
+	
+	<action name="adduserrightform" cache="false">
+		<template>addgrouprightform.tpl</template>		
+		<script>addgrouprightform.js</script>
+		<style>addgrouprightform.css</style>
+
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="area_id" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="adduserright">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+		<param name="rid">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="deleteuserright">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+		<param name="rid">	
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="rescan">
+		<param name="module">	
+			<validator name="inLengthRange" min="1" max="64"/>
+		</param>
+	</action>
+
+</module>

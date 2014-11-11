@@ -1,0 +1,11 @@
+#action {
+	vertical-align: top;
+}
+
+textarea#description {
+	height: 250px;
+}
+
+textarea#content {
+	height: 500px;
+}

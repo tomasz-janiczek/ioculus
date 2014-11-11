@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>Tomasz Janiczek</author>
+	<version>0.4</version>
+	<description>Zarządzanie grupami użytkowników</description>
+
+	<action name="listform" defaultAction="true" pagination="true" cache="false"/>
+
+	<action name="addform" cache="false"/>
+
+	<action name="editform" cache="false">
+		<template>addform.tpl</template>
+		<style>addform.css</style>
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="getroles">
+		<param name="return" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+	</action>
+
+	<action name="list">
+		<param name="return" required="false">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>		
+		<param name="filters" required="false"/>
+	</action>
+
+	<action name="details" pagination="true" cache="false">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="add">
+		<param name="name">
+			<validator name="inLengthRange" min="1" max="32"/>
+		</param>
+		<param name="description" required="false">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="type" required="false">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="edit" extend="public:add">
+		<param name="id">	
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="delete">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+	<action name="exists">
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+		<param name="all" required="false"/>
+	</action>
+
+	<action name="addgroupuserform" cache="false">
+		<param name="gid">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="getusergroups">
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="listrights">
+		<style>addform.css</style>
+		<param name="gid">
+			<validator name="isId"/>
+		</param>
+	</action>
+	
+	<action name="addgroupuser" cache="false">
+		<param name="gid">
+			<validator name="isId"/>
+		</param>
+		<param name="id">
+			<validator name="isId"/>
+		</param>
+	</action>
+
+	<action name="deletegroupuser">
+		<param name="gid">
+			<validator name="isId"/>
+		</param>
+		<param name="id">
+			<validator name="inLengthRange" min="1" max="255"/>
+		</param>
+	</action>
+
+</module>

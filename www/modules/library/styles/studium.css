@@ -1,0 +1,223 @@
+#action {
+	vertical-align:		top;
+}
+
+#action table#library_studium_main {
+	width:			100%;
+	height:			auto;
+}
+
+#action table#library_studium_main td {
+	vertical-align:		top;
+}
+
+#action table#library_studium_main td#library_studium_main_col1 {
+	width:			229px;
+}
+
+#action table#library_studium_main td#library_studium_main_col2 {
+	width:			15px;
+	background:		url("/www/images/index_col2_dot.jpg") repeat-y center;
+}
+
+#action table#library_studium_main td#library_studium_main_col3 {
+}
+
+#action #library_studium_main_nav {
+	margin-top:		0;
+}
+
+#action #library_studium_main_prev table td#library_studium_main_prev_content {
+	padding:			5px;
+}
+
+#action #library_studium_main_prev table td#library_studium_main_prev_content img {
+	float:				left;
+	padding:			5px;
+	margin:			5px 10px 0px 0px;
+	border:			1px solid #eeeeee;
+}
+
+#action #library_studium_main_col1 .scheme,
+#action #library_studium_main_col3 .scheme {
+	margin-bottom:		10px;
+}
+
+#action #library_download table,
+#action #library_download1 table {
+	width:				100%;
+}
+
+#action #library_download table td,
+#action #library_download1 table td {
+	text-align:			left;
+	vertical-align:		middle;
+	padding-top:		5px;
+	padding-bottom:		5px;
+}
+
+#action #library_download table td *,
+#action #library_download1 table td * {
+	font-weight:		bold;
+}
+
+#action #library_download table td img,
+#action #library_download1 table td img {
+	margin-right:		10px;
+}
+
+#action #library_studium_main_prev td.scheme_boxlight4_td2 {
+	padding:			10px 20px 10px 20px;
+}
+
+#action table#library_intro {
+	width:				100%;
+}
+
+#action #library_intro_title,
+#action #library_intro_title * {
+	font-family:		Lucida Sans Unicode, Verdana, sans-serif;
+	font-size:			20px;
+	font-weight:		bold;
+	color:				#14486D;
+	text-align:			left;
+	padding-bottom:		20px;
+}
+
+#action #library_intro_title span {
+	font-size:			26px;
+}
+
+#action td#library_intro_logo {
+	vertical-align:		middle;
+}
+
+#action td#library_intro_logo img {
+	vertical-align:		middle;
+}
+
+#action #library_intro_depart {
+	padding-left:		10px;
+	border-top:			1px solid #ECF0F1;
+	border-bottom:		1px solid #ECF0F1;
+	padding-top:		15px;
+	padding-bottom:		15px;
+}
+
+#action #library_intro_depart,
+#action #library_intro_depart * {
+	color:				#646464;
+	line-height:		19px;
+	font-size:			9px;
+}
+
+#action #library_intro_depart div {
+	padding-left:		10px;
+}
+
+#action #library_intro_depart span {
+	font-size:			13px;
+}
+
+#action #library_intro_depart span.big {
+	font-weight:		bold;
+	font-size:			11px;
+}
+
+#action #library_intro_depart span.big span {
+	font-weight:		bold;
+	font-size:			14px;
+}
+
+#action #library_intro_invite {
+	padding-top:		10px;
+	padding-bottom:		5px;
+}
+
+#action #library_intro_invite,
+#action #library_intro_invite * {
+	font-family:		Lucida Sans Unicode, Verdana, sans-serif;
+	font-size:			12px;
+	font-weight:		bold;
+	color:				#14486D;
+}
+
+#action #library_intro_invite span {
+	font-size:			16px;
+}
+
+#action #library_intro_spec * {
+	color:				#646464;
+	line-height:		19px;
+	font-size:			12px;
+	font-weight:		bold;
+}
+
+#action #library_intro_spec span {
+	font-size:			16px;
+}
+
+#action div#library_register_button {
+	background:			url("/www/modules/library/images/button_green.gif") no-repeat;
+	width:				149px;
+	height:				37px;
+	margin:				0 auto 0 auto;
+	cursor:				pointer;
+	text-align:			center;
+}
+
+#action #library_register td.scheme_boxyellow_td2 div p {
+	font-family:		Trebuchet MS, Verdana, sans-serif;
+	font-size:			16px;
+	font-weight:		bold;
+	color:				#3b3c00;
+	padding-top:		6px;
+	text-align:			center;
+	cursor:				pointer;
+}
+
+#action #library_register_bar div {
+	margin-top:		5px;
+}
+
+#action #library_register a {
+	text-decoration:	underline;
+}
+
+#action p#library_deans_letter_more {
+	text-align:			right;
+	padding-right:		10px;
+}
+
+#action .art p {
+	text-indent:		20px;
+	margin:				5px auto 0px auto;
+	line-height:		16px;
+}
+
+#action .art li {
+	line-height:		16px;
+	font-weight:		bold;
+	margin-bottom:		10px;
+}
+
+#action .art_link, 
+#action .art_link *{
+	font-family:		Lucida Sans Unicode, Verdana, sans-serif;
+	font-size:			12px;
+	color:				#14486D;
+	text-align:			center;
+	text-decoration:	underline;
+}
+
+#action .art .scheme_boxlight4_td2 {
+	padding:			10px;
+	padding-top:		5px;
+}
+
+#action .art .scheme_boxlight4_td2 img {
+	float:				left;
+	padding:			5px;
+	margin:				5px 10px 0px 0px;
+	border:				1px solid #eeeeee;
+}

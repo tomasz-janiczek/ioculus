@@ -1,0 +1,45 @@
+table.scheme_boxgrey1 {
+	border:			0;
+	margin:			0;
+	padding:			0;
+	width:			229px;
+	height:			auto;
+}
+
+table.scheme_boxgrey1 {
+	margin:			0 0 0 auto;
+}
+
+table.scheme_boxgrey1 td.scheme_boxgrey1_td1 {
+	width:				229px;
+	height:				18px;
+	font-family:		Arial, Verdana, sans-serif;
+	font-weight:		bold;
+	font-size:			14px;
+	padding-left:		10px;
+	text-align:			left;
+	vertical-align:		top;
+}
+
+table.scheme_boxgrey1 tr td.scheme_boxgrey1_td2  {
+	background:		url("/templates/schemes/boxgrey1/images/box_grey2.jpg") repeat-x #7d8087;
+	border:			1px solid #6a6e71;
+	border-top:		0;
+	width:			229px;
+	min-width:			229px;
+	max-width:		229px;
+	height:			234px;
+	min-height:		234px;
+	max-height:		234px;
+	font-size:			10px;
+	padding:			5px 15px 5px 15px;
+	text-align:			left;
+	vertical-align:		top;
+	color:			white;
+}
+
+table.scheme_boxgrey1 tr td.scheme_boxgrey1_td3  {
+	background:		#6a6e71;
+	height:			5px;
+	border-left:		1px solid #6a6e71;
+}

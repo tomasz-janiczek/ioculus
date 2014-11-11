@@ -1,0 +1,18 @@
+table.scheme_paginate {
+	height:			auto;
+	width:			100%;
+	margin:			10px auto 10px auto;
+}
+
+table.scheme_paginate td {
+	text-align:			center;
+}
+
+table.scheme_paginate a {
+	font-weight:		bold;
+	font-size:			12px;
+}
+
+table.scheme_paginate a:hover {
+	text-decoration:	underline;
+}

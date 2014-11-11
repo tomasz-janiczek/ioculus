@@ -1,0 +1,42 @@
+table.scheme_content7 td {
+	vertical-align:		top;
+	padding:			0;
+}
+
+table.scheme_content7 table {
+	width:			100%;
+	border-collapse:	separate;
+	border-spacing:		0px 5px;
+}
+
+table.scheme_content7 table td {
+	vertical-align:		middle;
+	text-align:			left;
+}
+
+table.scheme_content7 table td ul {
+	padding:			0;
+	margin:			0;
+}
+
+table.scheme_content7 table td.scheme_content7_date {
+	padding-top:		10px;
+	font-size:			10px;
+	font-weight:		bold;
+	color:			white;
+}
+
+table.scheme_content7 table td.scheme_content7_date_top {
+	padding-top:		0;
+}
+
+table.scheme_content7 table td.scheme_content7_title {
+	color:			white;
+	text-align:			left;
+	padding-left:		10px;
+}
+
+table.scheme_content7 table td.scheme_content7_arrow {
+	text-align:			right;
+	width:			1px;
+}

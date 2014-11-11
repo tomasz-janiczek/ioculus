@@ -1,0 +1,91 @@
+#title {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+#scheme {
+	background: url("/www/images/schemat.png") no-repeat top center;
+	height: 160px;
+	margin-bottom: 15px;
+}
+
+#description_default {
+	display: none;
+}
+
+#description .scheme_boxlight3_body {
+	min-height: 120px;
+}
+
+#col1 {
+	float: left;
+	width: 230px;
+	margin-right: 10px;
+}
+
+#col2 {
+	float: right;
+	width: 520px;
+}
+
+.scheme {
+	margin: 0 auto 10px auto;
+}
+
+#col2 .scheme_boxgreen {
+	width: 100%;
+}
+
+#col2 .scheme_layout1 {
+	margin-bottom: 0;
+}
+
+/* Scheme */
+
+#scheme {
+	position: relative;
+}
+
+.block {
+	position: absolute;
+	width: 125px;
+	height: 60px;
+	top: 5px;
+}
+
+.block div {
+	visibility: hidden;
+}
+
+.block_over {
+	border: 1px solid black;
+	background: gray;
+	opacity: 0.2;
+}
+
+#block1 {
+	left: 13px;
+}
+
+#block2 {
+	left: 163px;
+}
+
+#block3 {
+	left: 312px;
+}
+
+#block4 {
+	left: 465px;
+}
+
+#block5 {
+	left: 620px;
+}
+
+#block6 {
+	top: 93px;
+	left: 312px;
+}

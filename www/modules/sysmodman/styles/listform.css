@@ -1,0 +1,20 @@
+#menu {
+	clear: both;
+	margin-bottom: 10px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#menu .scheme_button {
+	float: right;
+	margin-left: 10px;
+}
+
+.name a {
+	font-weight: bold;
+}
+
+.cache span {
+	font-weight: bold;
+	color: green;
+}

@@ -1,0 +1,32 @@
+.scheme_form {
+	padding: 5px;
+}
+
+.scheme_form * {
+	color: #555555;
+}
+
+.scheme_form input.text,
+.scheme_form input.password,
+.scheme_form textarea {
+	border: 1px solid #BCC4C9;
+	background: white;
+}
+
+.scheme_form input.image {
+	display: block;
+	margin: 0 auto 0 auto;
+}
+
+.scheme_form a {
+	text-decoration: underline;
+}
+
+.scheme_form p {
+	margin: 5px auto 5px auto;
+}
+
+.scheme_form .scheme_form_field_required {
+	text-align: right;
+	padding-right: 10px;
+}

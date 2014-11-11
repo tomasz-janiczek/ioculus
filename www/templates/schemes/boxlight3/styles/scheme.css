@@ -1,0 +1,38 @@
+.scheme_boxlight3 {
+	margin: 0;
+	width: 100%;
+}
+
+.scheme_boxlight3_dot {
+	width: 229px;
+}
+
+.scheme_boxlight3 .scheme_boxlight3_header {
+	background: url("/www/images/dot_grey.jpg") no-repeat center left;
+	height: 18px;
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: left;
+	vertical-align: top;
+	padding-left: 15px;	
+}
+
+.scheme_boxlight3 .scheme_boxlight3_header_dot {
+	background: url("/www/templates/schemes/boxlight3/images/boxlight3_top.jpg") no-repeat top left;
+	padding-left: 20px;
+}
+
+.scheme_boxlight3 .scheme_boxlight3_body {
+	background: url("/www/templates/schemes/boxlight3/images/boxlight3_body.jpg") repeat-x;
+	padding: 5px;
+	text-align: left;
+	vertical-align: top;
+	color: black;
+	border: 1px solid #eeeeee;
+	overflow: hidden;
+}
+
+.scheme_boxlight3 .scheme_boxlight3_body_dot {
+	border: 0;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>Tomasz Janiczek</author>
+	<version>0.1</version>
+	<description>Adds a simple administration panel</description>	
+	
+	<action name="listform" cache="false" defaultAction="true"/>
+
+</module>

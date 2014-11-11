@@ -1,0 +1,37 @@
+.scheme_form_field_labeled {
+	clear:both;
+	overflow: hidden;
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.scheme_form_field_labeled div {
+	clear: none;
+	float:left;
+}
+
+.scheme_form_field_labeled .scheme_form_field_labeled_label {
+	display: block;
+	width:20%;
+}
+
+/* Adding padding to a DIV will cause it to grow and break the layout. Adding it to a SPAN will not */
+.scheme_form_field_labeled .scheme_form_field_labeled_label span {
+	padding: 0 5px 0 10px;
+}
+
+.scheme_form_field_labeled .scheme_form_field_labeled_content {
+	width:75%;
+	text-align:left;
+}
+
+.scheme_form_field_labeled .scheme_form_field_labeled_content input.text,
+.scheme_form_field_labeled .scheme_form_field_labeled_content input.password,
+.scheme_form_field_labeled .scheme_form_field_labeled_content textarea,
+.scheme_form_field_labeled .scheme_form_field_labeled_content select.select {
+	width: 96%;
+}
+
+.scheme_form_field_labeled .scheme_form_field_labeled_content textarea {
+	height: 100px;
+}

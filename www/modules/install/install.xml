@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<module>
+	<author>MixMan</author>
+	<version>0.1</version>
+	<description>Install iOculus sample application</description>
+
+	<action name="step1" defaultAction="true" cache="false"/>
+
+	<action name="step2" cache="false"/>
+	
+	<action name="step3" cache="false">
+		<param name="hostspec"/>
+        	<param name="database"/>
+		<param name="username"/>
+        	<param name="password"/>
+	</action>
+</module>

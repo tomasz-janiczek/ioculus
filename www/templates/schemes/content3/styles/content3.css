@@ -1,0 +1,31 @@
+table.scheme_content3 {
+	border:			0;
+	margin:			10px auto 10px auto;
+	padding:			5px 0 5px 0;
+	width:			100%;
+	height:			auto;
+}
+
+table.scheme_content3 input.text,
+table.scheme_content3 input.password {
+	border:			1px solid #a8a848;
+	margin:			0 auto 5px auto;
+	width:			195px;
+	padding-left:		5px;
+}
+
+table.scheme_content3 input.image {
+	margin:			5px auto 0px 140px;
+}
+
+table.scheme_content3 p {
+	margin:			0px auto 10px auto;
+}
+.submit_button {
+	margin-right: 13px;
+	background-image:url(/www/images/button_save.gif);
+	border:none;
+	width:58px;
+	height:22px;
+	float:right;
+}

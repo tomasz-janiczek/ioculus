@@ -1,0 +1,6 @@
+table.scheme_admin td#scheme_admin_content table#rightsTable {
+	width:			300px;
+	max-width:		100%;
+	float:				none;
+	margin:			0 auto 0 auto;
+}

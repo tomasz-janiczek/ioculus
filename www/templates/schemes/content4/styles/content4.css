@@ -1,0 +1,54 @@
+table.scheme_content4 table {
+	margin:			5px;
+	width:			100%;
+}
+
+table.scheme_content4 .scheme_content4_image1,
+table.scheme_content4 .scheme_content4_image2 {
+	height:			85px;
+	vertical-align:		top;
+}
+
+table.scheme_content4 .scheme_content4_image1 {
+	width:			1px;
+	padding:			5px;
+}
+
+table.scheme_content4 .scheme_content4_image2_img {
+	text-align:			center;
+	vertical-align:		middle;
+}
+
+table.scheme_content4 .scheme_content4_image2 img {
+	padding:			5px;
+	border:			1px solid #eeeeee;
+	background:		white;
+}
+
+table.scheme_content4 .scheme_content4_link {
+	height:			1px;
+	text-align:			right;
+	vertical-align:		bottom;
+}
+
+table.scheme_content4 .scheme_content4_link_empty {
+	height:				20px;
+	text-align:			right;
+	vertical-align:		bottom;
+}
+
+table.scheme_content4 .scheme_content4_link img {
+	margin:			5px 5px 5px auto;
+}
+
+table.scheme_content4 .scheme_content4_image2 ul {
+	margin:			0 0 0 30px;
+	padding:			0;
+	line-height:		20px;
+}
+
+table.scheme_content4 .scheme_content4_content {
+	padding:			3px 5px 0 5px;
+	line-height:		17px;
+	height:			60px;
+}

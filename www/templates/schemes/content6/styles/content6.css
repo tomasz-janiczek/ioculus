@@ -1,0 +1,30 @@
+table.scheme_content6 td {
+	vertical-align:		top;
+	padding:			0;
+	padding-top:		5px;
+}
+
+table.scheme_content6 textarea {
+	height:			140px;
+}
+
+table.scheme_content6 textarea,
+table.scheme_content6 input.text {
+	border:			1px solid #6b6a6f;
+	margin-bottom:		5px;
+	width:			100%;
+}
+
+table.scheme_content6 label {
+	color:			white;
+ 	display:			block;
+ 	clear:			right;
+	font-weight:		bold;
+	margin-bottom:		3px;
+}
+
+table.scheme_content6 input.image {
+	display:			block;
+	margin:			3px 0 3px auto;
+}
+
